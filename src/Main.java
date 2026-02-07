@@ -1,38 +1,19 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main{
-    public static double slide(int arr[],int k) {
-        int wsum = 0;
-        int maxsum = 0;
-        for (int i = 0; i < k; i++) {
-            wsum += arr[i];
-
-        }
-        maxsum = wsum;
-        for (int i = k; i < arr.length; i++) {
-            wsum += arr[i];
-            wsum -= arr[i - k];
-            maxsum=Math.max(maxsum,wsum);
-
-
-
-        }
-        return (double) maxsum/k;
+    static void Print1ton(int n){
+    if(n==0){
+        return;
     }
-        public static void main(String[]args){
-        int arr []={1,2,3,4,5};
-        int k=3;
+    Print1ton(n-1);
+        System.out.print(n + " ");
 
-            System.out.println(slide(arr,k));
-
-    }
 }
+public static void main (String[]args){
+        Scanner scan= new Scanner(System.in);
+        int n=scan.nextInt();
+        Print1ton(n);
+        scan.close();
 
-
-
-
-
-
-
-
-
+}
+}
