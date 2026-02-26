@@ -1,19 +1,26 @@
-import java.util.Scanner;
 
-public class Main{
-    static void Print1ton(int n){
-    if(n==0){
-        return;
-    }
-    Print1ton(n-1);
-        System.out.print(n + " ");
 
-}
-public static void main (String[]args){
-        Scanner scan= new Scanner(System.in);
-        int n=scan.nextInt();
-        Print1ton(n);
-        scan.close();
+public class Main {
 
-}
-}
+        public static void main(String[] args) {
+            int arr[] = {1, 2, 3, 4, 5, 4, 3, 2, 1};
+            int max = arr[0];
+            int  ans=mountain( arr, max);
+            System.out.println(ans);
+
+        }
+
+        static int mountain(int[] arr, int max){
+            for (int i=0;i<arr.length;i++){
+                if(arr[i]>max){
+                max=arr[i];}}
+                return max;
+
+            }}
+
+
+
+
+
+
+
