@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -13,3 +14,31 @@ public class Main {
         }
     }
 }
+=======
+
+
+public class Main {
+
+        public static void main(String[] args) {
+            int arr[] = {1, 2, 3, 4, 5, 4, 3, 2, 1};
+            int max = arr[0];
+            int  ans=mountain( arr, max);
+            System.out.println(ans);
+
+        }
+
+        static int mountain(int[] arr, int max){
+            for (int i=0;i<arr.length;i++){
+                if(arr[i]>max){
+                max=arr[i];}}
+                return max;
+
+            }}
+
+
+
+
+
+
+
+>>>>>>> 288f2da6ac1ebfc605570abebbc9fe07f61b0c27
